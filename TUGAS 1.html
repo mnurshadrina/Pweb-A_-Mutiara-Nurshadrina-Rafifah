@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +28,7 @@
         }
 
         .button {
+            display: block; /* Ensures buttons stack vertically */
             background-color: #333;
             color: #fff;
             padding: 15px 20px;
@@ -37,6 +36,7 @@
             border-radius: 5px;
             margin-bottom: 10px;
             cursor: pointer;
+            text-decoration: none; /* Remove underline from links */
             transition: background-color 0.3s;
         }
 
@@ -53,15 +53,14 @@
 
 <body>
     <div class="container">
-        <!-- Gambar dari Google Drive -->
         <img src="https://drive.google.com/uc?export=view&id=1KyNv-6n8f4cPq8UTY-MLsCbDGK-y1tVr" alt="Kopi Gadjah Logo" class="logo">
         <h1>@kopi.gadjah</h1>
         <p>Kopi Tubruk Gadjah dengan Aroma Khas, Rasa Mantap & Hitamnya Pekat.</p>
-        <button class="button">WhatsApp Customer Service</button>
-        <button class="button">Blibli Official Store</button>
-        <button class="button">Tokopedia Official Store</button>
-        <button class="button">Lazada Official Store</button>
-        <button class="button">Official Website</button>
+        <a href="https://api.whatsapp.com/send/?phone=6285218788208&text&type=phone_number&app_absent=0" class="button" target="_blank">WhatsApp Customer Service</a>
+        <a href="https://www.blibli.com/brand/savoria-official-store?excludeProductList=false&promoTab=false&brand=Kopi%20Tubruk%20Gadjah" class="button" target="_blank">Blibli Official Store</a>
+        <a href="https://www.tokopedia.com/savoriaofficial/etalase/kopi-tubruk-gadjah" class="button" target="_blank">Tokopedia Official Store</a>
+        <a href="https://www.lazada.co.id/shop-kopi-instan/lazada5740002360_gadjah%20tubruk-126444447/?savoria-store&from=wangpu&m=shop&q=All-Products" class="button" target="_blank">Lazada Official Store</a>
+        <a href="https://kopigadjah.id/" class="button" target="_blank">Official Website</a>
         <div class="footer">
             <a href="https://linktr.ee/kopi.gadjah" target="_blank">linktr.ee/kopi.gadjah</a>
         </div>
